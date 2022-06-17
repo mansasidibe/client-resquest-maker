@@ -23,6 +23,6 @@ class Controller extends BaseController
         $request = $client->get($req->url);
         $response = $request->getBody()->getContents();
 
-        dd($response);
+        return response()->json(['données' => $response]);
     }
 }

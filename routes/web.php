@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 Route::get('/data', [Controller::class, 'getGuzzleRequest'])->name('getGuzzleRequest');
 Route::post('/data', [Controller::class, 'postGuzzleRequest']);
+
